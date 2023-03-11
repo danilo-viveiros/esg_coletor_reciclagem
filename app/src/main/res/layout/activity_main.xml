@@ -1,0 +1,116 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+
+   <ImageView
+       android:id="@+id/login_imageView_logoPrincipal"
+       android:layout_width="wrap_content"
+       android:layout_height="wrap_content"
+       android:adjustViewBounds="true"
+       android:visibility="visible"
+       app:layout_constraintBottom_toBottomOf="parent"
+       app:layout_constraintEnd_toEndOf="parent"
+       app:layout_constraintStart_toStartOf="parent"
+       app:layout_constraintTop_toTopOf="parent"
+       app:layout_constraintVertical_bias="0.16000003"
+       app:srcCompat="@drawable/tela_login_esg_app_android" />
+
+   <TextView
+       android:id="@+id/login_textView_SistemaESG"
+       android:layout_width="wrap_content"
+       android:layout_height="wrap_content"
+       android:layout_marginStart="95dp"
+       android:layout_marginTop="28dp"
+       android:fontFamily="@font/roboto"
+       android:text="Sistema ESG"
+       android:textColor="#000000"
+       android:textSize="24sp"
+       android:typeface="normal"
+       app:layout_constraintEnd_toEndOf="parent"
+       app:layout_constraintHorizontal_bias="0.855"
+       app:layout_constraintStart_toStartOf="parent"
+       app:layout_constraintTop_toTopOf="parent" />
+
+   <TextView
+       android:id="@+id/login_textView_Login"
+       android:layout_width="wrap_content"
+       android:layout_height="wrap_content"
+       android:layout_marginStart="72dp"
+       android:layout_marginTop="17dp"
+       android:fontFamily="@font/roboto"
+       android:text="Login"
+       android:textColor="#000000"
+       android:textSize="50sp"
+       android:textStyle="bold"
+       app:layout_constraintStart_toStartOf="@+id/login_imageView_logoPrincipal"
+       app:layout_constraintTop_toBottomOf="@+id/login_imageView_logoPrincipal" />
+
+   <EditText
+       android:id="@+id/login_editText_TextEmailAddress"
+       android:layout_width="289dp"
+       android:layout_height="48dp"
+       android:layout_marginTop="24dp"
+       android:ems="10"
+       android:fontFamily="@font/roboto"
+       android:hint="Seu e-mail"
+       android:inputType="textEmailAddress"
+       app:circularflow_radiusInDP="10dp"
+       app:layout_constraintCircleRadius="10dp"
+       app:layout_constraintEnd_toEndOf="@+id/login_imageView_logoPrincipal"
+       app:layout_constraintHorizontal_bias="0.0"
+       app:layout_constraintStart_toStartOf="@+id/login_textView_Login"
+       app:layout_constraintTop_toBottomOf="@+id/login_textView_Login" />
+
+
+   <EditText
+       android:id="@+id/editTextTextPassword"
+       android:layout_width="288dp"
+       android:layout_height="48dp"
+       android:layout_marginTop="48dp"
+       android:ems="10"
+       android:fontFamily="@font/roboto"
+       android:hint="Sua Senha"
+       android:inputType="textPassword"
+       android:radius="10dp"
+       app:layout_constraintEnd_toEndOf="@+id/login_editText_TextEmailAddress"
+       app:layout_constraintStart_toStartOf="@+id/login_editText_TextEmailAddress"
+       app:layout_constraintTop_toBottomOf="@+id/login_editText_TextEmailAddress" />
+
+   <Button
+       android:id="@+id/button_login"
+       android:layout_width="wrap_content"
+       android:layout_height="wrap_content"
+       android:layout_marginTop="24dp"
+       android:backgroundTint="#34A254"
+       android:text="Login"
+       app:layout_constraintStart_toStartOf="@+id/textView_forget_password"
+       app:layout_constraintTop_toBottomOf="@+id/textView_forget_password" />
+
+   <TextView
+       android:id="@+id/textView_forget_password"
+       android:layout_width="wrap_content"
+       android:layout_height="wrap_content"
+       android:layout_marginTop="8dp"
+       android:text="Esqueceu sua senha?"
+       android:textColor="#4CAF50"
+       android:textStyle="bold"
+       app:layout_constraintStart_toStartOf="@+id/editTextTextPassword"
+       app:layout_constraintTop_toBottomOf="@+id/editTextTextPassword" />
+
+   <TextView
+       android:id="@+id/textView_CriaConta"
+       android:layout_width="wrap_content"
+       android:layout_height="wrap_content"
+       android:layout_marginTop="8dp"
+       android:text="Crie sua conta aqui!"
+       android:textColor="#673AB7"
+       app:layout_constraintStart_toStartOf="@+id/button_login"
+       app:layout_constraintTop_toBottomOf="@+id/button_login" />
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

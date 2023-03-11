@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".ActivityPrincipal">
+
+    <CalendarView
+        android:id="@+id/calendarView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="4dp"
+        android:layout_marginTop="36dp"
+        android:background="#4CAF50"
+        app:layout_constraintStart_toStartOf="@+id/textView_BemVindo"
+        app:layout_constraintTop_toBottomOf="@+id/textView_Calendario_Agendamento" />
+
+    <TextView
+        android:id="@+id/textView_BemVindo"
+        android:layout_width="274dp"
+        android:layout_height="35dp"
+        android:layout_marginStart="24dp"
+        android:layout_marginTop="24dp"
+        android:fontFamily="@font/roboto"
+        android:text="Bem Vindo Danilo!"
+        android:textSize="24sp"
+        android:textStyle="italic"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/textView_Calendario_Agendamento"
+        android:layout_width="250dp"
+        android:layout_height="36dp"
+        android:layout_marginTop="24dp"
+        android:fontFamily="@font/roboto"
+        android:text="Seus Agendamentos"
+        android:textAlignment="center"
+        android:textSize="24sp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView_BemVindo" />
+
+    <Button
+        android:id="@+id/button_agentaNova_coleta"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="24dp"
+        android:backgroundTint="#4CAF50"
+        android:text="Agendar nova coleta"
+        app:layout_constraintStart_toStartOf="@+id/calendarView"
+        app:layout_constraintTop_toBottomOf="@+id/calendarView" />
+
+    <Button
+        android:id="@+id/button_Edit_coleta"
+        android:layout_width="218dp"
+        android:layout_height="43dp"
+        android:backgroundTint="#4CAF50"
+        android:text="Cancelar Coleta"
+        app:layout_constraintStart_toStartOf="@+id/button_agentaNova_coleta"
+        app:layout_constraintTop_toBottomOf="@+id/button_agentaNova_coleta" />
+
+    <Button
+        android:id="@+id/button_exibir_saldo"
+        android:layout_width="112dp"
+        android:layout_height="93dp"
+        android:layout_marginTop="24dp"
+        android:text="Exibir meu saldo"
+        app:layout_constraintEnd_toEndOf="@+id/calendarView"
+        app:layout_constraintTop_toBottomOf="@+id/calendarView" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
